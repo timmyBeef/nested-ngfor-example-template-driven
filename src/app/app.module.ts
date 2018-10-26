@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { NestedNgforTemplateDrivenComponent } from './nested-ngfor-template-driven/nested-ngfor-template-driven.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    NestedNgforTemplateDrivenComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [NestedNgforTemplateDrivenComponent]
 })
 export class AppModule { }
